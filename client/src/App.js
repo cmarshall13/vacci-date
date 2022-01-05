@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 import { UserProvider } from './utils/GlobalState'
 
 import Home from './pages/Home';
-// import Profile from './pages/Profile';
+import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
