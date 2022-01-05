@@ -51,13 +51,13 @@ const Matches = () => {
             {allData.all.map((user) => {
                 if(user.matches.includes(meData.me._id)){
                     return( <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                                <img className="w-full" src={user.img} alt="User Profile picture"/>
+                                {user.img ? <img className="w-full" src={user.img} alt="User Profile picture"/> : <div></div>}    
                                 <div className="px-6 py-4">
-                                <div className="font-bold text-xl mb-1">{user.firstname}</div>
-                                <div className="font-bold text-l mb-2">{user.age}, {user.gender}</div>
-                                <p className="text-gray-700 text-base">
-                                {user.aboutme}
-                                </p>
+                                    <div className="font-bold text-xl mb-1">{user.firstname}</div>
+                                    <div className="font-bold text-l mb-2">{user.age}, {user.gender}</div>
+                                    <p className="text-gray-700 text-base">
+                                    {user.aboutme}
+                                    </p>
                                 </div>
                                 <div className="px-6 pt-4 pb-2 flex justify-between">
                                 <button onClick={() => handleUnlikeUser(user._id)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 w-1/3 rounded">
