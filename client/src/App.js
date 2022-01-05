@@ -16,6 +16,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
 import Dashboard from './pages/Dashboard';
+import Matches from "./pages/Matches";
 
 // Have to change http link when we deploy
 const httpLink = createHttpLink({
@@ -50,6 +51,7 @@ function App() {
               <Route exact path="/signup" element={<Dashboard/>} />
               <Route exact path="/profile" element={<Profile/>} />
               <Route exact path="/dashboard" element={<Dashboard/>}/>
+              <Route exact path="/matches" element={<Matches/>}/>
               <Route element={NotFound} />
             </Routes>
           </UserProvider>
