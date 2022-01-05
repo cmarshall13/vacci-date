@@ -62,9 +62,7 @@ function Login() {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <Link to="/dashboard">
           <button type="submit">Submit</button>
-          </Link>
         </div>
       </form>
     </div>
